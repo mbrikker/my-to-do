@@ -13,10 +13,17 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Uus tegevus"
+            }
+        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"},
                 "content": [
                     ""
                 ],
@@ -29,14 +36,19 @@
         "Tegevusloend": {
             "prototype": "digit/ui/title.reel",
             "properties": {
-                "element": {"#": "Tegevusloend"},
+                "value": "Tegevusloend"
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
                 "value": "Tegevusloend"
             }
         },
         "Uus tegevus": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "Uus tegevus"},
                 "enabled": true,
                 "label": "Uus tegevus"
             }
@@ -46,10 +58,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="Tegevusloend">
-
-        </h1>
-        <button data-montage-id="Uus tegevus"></button>
+        <h1 data-montage-id="title"></h1>
+        <button data-montage-id="button"></button>
         <ul data-montage-id="list">
             <li></li>
         </ul>
